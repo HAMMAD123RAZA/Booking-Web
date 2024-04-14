@@ -6,11 +6,13 @@ import authRoute from "./routes/auth.js"
 import userRoute from "./routes/users.js"
 import roomRoute from "./routes/rooms.js"
 import hotelRoute from "./routes/hotels.js"
+import cookieparser from "cookie-parser"
 
 
+// middlewares
 app.use(cors())
 app.use(express.json())
-
+app.use(cookieparser())
 
 const connect=async()=>{
     try {
