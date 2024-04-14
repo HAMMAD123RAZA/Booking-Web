@@ -30,7 +30,6 @@ app.get("/",(req,res)=>{
     res.json("hello")
 })
 
-
 app.use('/api/auth',authRoute)
 app.use('/api/user', userRoute)
 app.use('/api/room', roomRoute)
